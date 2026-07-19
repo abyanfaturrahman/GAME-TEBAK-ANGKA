@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:white;
+}
+
+header,
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0b1f3a;
+}
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===========================
+   Tampilan Awal
+=========================== */
+
+.start-screen{
+    text-align:center;
+}
+
+.start-screen h2{
+    margin-bottom:15px;
+    font-size:35px;
+    color:#60a5fa;
+}
+
+.start-screen p{
+    margin-bottom:20px;
+    color:#dbeafe;
+}
+
+/* ===========================
+   Tampilan Game
+=========================== */
+
+.game{
+    display:none;
+    width:90%;
+    max-width:600px;
+    padding:35px;
+    background:#1e293b;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+/* ===========================
+   Tampilan Akhir
+=========================== */
+
+.end-screen{
+    display:none;
+    width:90%;
+    max-width:600px;
+    padding:35px;
+    background:#1e293b;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.end-screen h2{
+    font-size:34px;
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+.end-screen h3{
+    color:#facc15;
+    margin:20px 0;
+    font-size:28px;
+}
+
+.end-screen p{
+    margin:12px 0;
+    font-size:20px;
+    color:#dbeafe;
+}
+
+/* ===========================
+   Input
+=========================== */
+
+input{
+    width:180px;
+    padding:12px;
+    margin:15px auto;
+    display:block;
+    border:none;
+    border-radius:10px;
+    background:#334155;
+    color:white;
+    text-align:center;
+    font-size:18px;
+}
+
+input::placeholder{
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+input:focus{
+    outline:none;
+    background:#475569;
+}
+
+/* ===========================
+   Tombol
+=========================== */
+
+button{
+    padding:10px 22px;
+    margin:5px;
+    border:none;
+    border-radius:10px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2563eb;
+    transform:translateY(-2px);
+}
+
+button:disabled{
+    background:#64748b;
+    cursor:not-allowed;
+}
+
+/* ===========================
+   Informasi Game
+=========================== */
+
+#hasil,
+#percobaan,
+#timer{
+    margin-top:15px;
+}
+
+#hasil{
+    color:#93c5fd;
+    font-weight:bold;
+    font-size:20px;
+}
+
+#percobaan{
+    color:#dbeafe;
+}
+
+#timer{
+    color:#facc15;
+    font-size:20px;
+    font-weight:bold;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka</title>
+
+    <link rel="stylesheet" href="tugasR.css">
+</head>
+<body>
+
+<header>
+    <h1>🎯 Game Tebak Angka</h1>
+</header>
+
+<main>
+
+    <!-- Tampilan Awal -->
+    <section id="startScreen" class="start-screen">
+        <h2>Selamat Datang</h2>
+        <p>Game Tebak Angka 1 - 100</p>
+
+        <button id="mulaiBtn">
+            ▶ Mulai Game
+        </button>
+    </section>
+
+    <!-- Tampilan Game -->
+    <section class="game" id="gameScreen">
+
+        <p><b>Misi Anda:</b></p>
+        <p>Temukan angka rahasia antara 1 - 100 dalam 10 kali percobaan.</p>
+
+        <input
+            type="number"
+            id="tebakan"
+            placeholder="Masukkan angka">
+
+        <button id="cekBtn">Tebak</button>
+        <button id="ulangBtn">Main Lagi</button>
+
+        <h3 id="hasil">Silakan mulai menebak</h3>
+
+        <p id="percobaan">
+            Jumlah Percobaan : 0 / 10
+        </p>
+
+        <p id="timer">
+            ⏱ Waktu : 00:00
+        </p>
+
+    </section>
+
+    <!-- Tampilan Akhir -->
+    <section id="endScreen" class="end-screen">
+
+        <h2 id="statusGame">GAME SELESAI</h2>
+
+        <h3 id="scoreText"></h3>
+
+        <p id="timeText"></p>
+
+        <button id="mainLagiAkhir">
+            🔄 Main Lagi
+        </button>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Game Tebak Angka</p>
+</footer>
+
+<script src="tugasR.js"></script>
+
+</body>
+</html>
